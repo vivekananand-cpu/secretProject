@@ -50,7 +50,7 @@ const UserProflie = () => {
                         </div>
                     </div>
                     <div>
-                        <BarChart />
+                       
                     </div>
                 </div>
                 
