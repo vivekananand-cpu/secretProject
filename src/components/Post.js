@@ -9,7 +9,7 @@ const Post = ({ username, img,caption }) => {
     const [mylikes, setMylikes] = useState(0);
 
     const likePost = () => {
-        if (hasLiked == false) {
+        if (hasLiked === false) {
             setHasLiked(true);
             setMylikes(mylikes + 1);
 

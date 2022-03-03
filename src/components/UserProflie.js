@@ -5,8 +5,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import BarChart from './BarChart';
+import { useState } from 'react';
+import ImgModal from './ImgModal';
 
 const UserProflie = () => {
+    const [imgModal,setImgModal]=useState(false);
+
     return (
         <div className="h-[100vh] w-[100vw] flex justify-center items-center">
 
@@ -15,7 +19,8 @@ const UserProflie = () => {
                    
                         <div className=" flex flex-col items-center justify-between  ">
                             {/* user Avatar */}
-                            <img className="h-[250px] w-[250px] mt-3 pt-4 shadow-md hover:shadow-xl rounded-full object-cover  hover:scale-110 transtion-all duration-500 ease-out" src="https://c.ndtvimg.com/2021-12/ebpsij18_samantha-ruth-prahu-naga-chaitanya_295x200_08_December_21.jpg" alt="" />
+                            <img onClick={()=>{setImgModal(!imgModal)}} className="h-[250px] w-[250px] mt-3 pt-4 shadow-md hover:shadow-xl rounded-full object-cover  hover:scale-110 transtion-all duration-500 ease-out" src="https://c.ndtvimg.com/2021-12/ebpsij18_samantha-ruth-prahu-naga-chaitanya_295x200_08_December_21.jpg" alt="" />
+                            <ImgModal imgModal={imgModal} setImgModal={setImgModal} />
                             <h1 className="text-3xl pb-5 hover:text-gray-500 hover:scale-95 transiton-all duration-500 ease-out">Samantha Akhineni</h1>
                         </div>
                         <div className="flex flex-col items-center justify-around">
@@ -49,9 +54,7 @@ const UserProflie = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
-                       
-                    </div>
+                    
                 </div>
                 
                 
