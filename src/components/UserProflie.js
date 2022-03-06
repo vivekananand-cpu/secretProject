@@ -19,7 +19,7 @@ const UserProflie = () => {
 
                     <div className=" flex flex-col items-center justify-between  ">
                         {/* user Avatar */}
-                        <img onClick={() => { setImgModal(!imgModal) }} className="h-[250px] w-[250px] mt-3 pt-4 shadow-md hover:shadow-xl rounded-full object-cover  hover:scale-110 transtion-all duration-500 ease-out" src="https://c.ndtvimg.com/2021-12/ebpsij18_samantha-ruth-prahu-naga-chaitanya_295x200_08_December_21.jpg" alt="" />
+                        <img onClick={() => { setImgModal(!imgModal) }} className="h-[250px] w-[250px] mt-3 pt-4 cursor-pointer shadow-md hover:shadow-xl rounded-full object-cover  hover:scale-110 transtion-all duration-500 ease-out" src="https://c.ndtvimg.com/2021-12/ebpsij18_samantha-ruth-prahu-naga-chaitanya_295x200_08_December_21.jpg" alt="" />
                         <ImgModal imgModal={imgModal} setImgModal={setImgModal} />
                         <h1 className="text-3xl pb-5 hover:text-gray-500 hover:scale-95 transiton-all duration-500 ease-out">Samantha Akhineni</h1>
                     </div>
@@ -46,10 +46,10 @@ const UserProflie = () => {
 
                         </div>
                         <div className="flex justify-between space-x-8">
-                            <FacebookIcon className="hover:scale-110 transtion-all duration-500 ease-out hover:text-gray-700" />
-                            <LinkedInIcon className="hover:scale-110 transtion-all duration-500 ease-out hover:text-gray-700" />
-                            <GitHubIcon className="hover:scale-110 transtion-all duration-500 ease-out hover:text-gray-700" />
-                            <TwitterIcon className="hover:scale-110 transtion-all duration-500 ease-out hover:text-gray-700" />
+                            <FacebookIcon className="cursor-pointer hover:scale-110 transtion-all duration-500 ease-out hover:text-gray-700" />
+                            <LinkedInIcon className="cursor-pointer hover:scale-110 transtion-all duration-500 ease-out hover:text-gray-700" />
+                            <GitHubIcon className="cursor-pointer hover:scale-110 transtion-all duration-500 ease-out hover:text-gray-700" />
+                            <TwitterIcon className="cursor-pointer hover:scale-110 transtion-all duration-500 ease-out hover:text-gray-700" />
 
                         </div>
                     </div>
