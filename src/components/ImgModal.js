@@ -4,7 +4,7 @@ import  ReactDOM  from 'react-dom';
 import { XIcon} from "@heroicons/react/outline";
 
 
-const ImgModal = ({imgModal,setImgModal}) => {
+const ImgModal = ({imgModal,setImgModal,photo}) => {
     if(!imgModal) return null;
     return ReactDOM.createPortal(
         <>
@@ -15,7 +15,7 @@ const ImgModal = ({imgModal,setImgModal}) => {
                    <XIcon onClick={()=>setImgModal(!imgModal)} className="h-8 m-3 text-white hover:scale-110 cursor-pointer transtion-all duration-500 ease-out" />
                    </div>
                    <div className="h-[75vh] w-[35vw]rounded-xl ">
-                   <img className="w-full h-full   object-cover" src="https://c.ndtvimg.com/2021-12/ebpsij18_samantha-ruth-prahu-naga-chaitanya_295x200_08_December_21.jpg" alt="" />
+                   <img className="w-full h-full   object-cover" src={photo} alt="" />
 
                    </div>
 

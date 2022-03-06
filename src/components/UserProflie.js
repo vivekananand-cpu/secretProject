@@ -8,7 +8,7 @@ import BarChart from './BarChart';
 import { useState } from 'react';
 import ImgModal from './ImgModal';
 
-const UserProflie = () => {
+const UserProflie = ({name,profile,post,likes,comments,followers,work,phone,posts,following}) => {
     const [imgModal, setImgModal] = useState(false);
 
     return (
@@ -19,12 +19,12 @@ const UserProflie = () => {
 
                     <div className=" flex flex-col items-center justify-between  ">
                         {/* user Avatar */}
-                        <img onClick={() => { setImgModal(!imgModal) }} className="h-[250px] w-[250px] mt-3 pt-4 cursor-pointer shadow-md hover:shadow-xl rounded-full object-cover  hover:scale-110 transtion-all duration-500 ease-out" src="https://c.ndtvimg.com/2021-12/ebpsij18_samantha-ruth-prahu-naga-chaitanya_295x200_08_December_21.jpg" alt="" />
-                        <ImgModal imgModal={imgModal} setImgModal={setImgModal} />
-                        <h1 className="text-3xl pb-5 hover:text-gray-500 hover:scale-95 transiton-all duration-500 ease-out">Samantha Akhineni</h1>
+                        <img onClick={() => { setImgModal(!imgModal) }} className="h-[250px] w-[250px] mt-3 pt-4 cursor-pointer shadow-md hover:shadow-xl rounded-full object-cover  hover:scale-110 transtion-all duration-500 ease-out" src={profile} alt="" />
+                        <ImgModal photo={profile} imgModal={imgModal} setImgModal={setImgModal} />
+                        <h1 className="text-3xl pb-5 hover:text-gray-500 hover:scale-95 transiton-all duration-500 ease-out">{name}</h1>
                     </div>
                     <div className="flex flex-col items-center justify-around">
-                        <h1 className="font-bold text-5xl text-[#4C4267] hover:text-[#010001]">Civil Engineer</h1>
+                        <h1 className="font-bold text-5xl text-[#4C4267] hover:text-[#010001]">{work}</h1>
                         <div className="flex flex-col hover:scale-105  rounded-lg p-2 space-y-3 text-gray-700 transtion-all duration-500 ease-out">
                             <div className="flex space-x-3">
                                 <LocationMarkerIcon className="h-6" />
@@ -34,7 +34,7 @@ const UserProflie = () => {
                             <div className="flex space-x-3">
                                 <PhoneIcon className="h-6" />
 
-                                <p>8788637472 </p>
+                                <p>{phone} </p>
 
                             </div>
                             <div className="flex space-x-3">
@@ -58,25 +58,25 @@ const UserProflie = () => {
                 <div className="hidden md:inline flex flex-col col-span-2">
                     <div className="flex items-center justify-center bg-[#f8f1f0] w-full h-[100px] rounded-md">
                         <div className="flex text-xl font-bold text-blue-900 justify-between w-[50%]">
-                            <p className=" hover:text-gray-600 cursor-pointer hover:shadow-slate-600 tranform transtion duration-300 ease-out">20 Posts</p>
-                            <p className=" hover:text-gray-600 cursor-pointer hover:shadow-slate-600 tranform transtion duration-300 ease-out">201 Following</p>
-                            <p className=" hover:text-gray-600 cursor-pointer hover:shadow-slate-600 tranform transtion duration-300 ease-out">330 Followers</p>
+                            <p className=" hover:text-gray-600 cursor-pointer hover:shadow-slate-600 tranform transtion duration-300 ease-out">{posts} Posts</p>
+                            <p className=" hover:text-gray-600 cursor-pointer hover:shadow-slate-600 tranform transtion duration-300 ease-out">{following} Following</p>
+                            <p className=" hover:text-gray-600 cursor-pointer hover:shadow-slate-600 tranform transtion duration-300 ease-out">{followers} Followers</p>
 
                         </div>
                     </div>
                     <div className="overflow-scroll bg-[#FFF8F8]">
                         <div className="grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 h-[695px] rounded-md">
                             <div className="relative m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
-                                <img className=" w-full object-cover rounded-xl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Samantha_at_10_Enradhukulla_Teaser_Launch.jpg/1200px-Samantha_at_10_Enradhukulla_Teaser_Launch.jpg" alt="" />
+                                <img className=" w-full object-cover rounded-xl" src={post} alt="" />
                                 <div className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl">
                                     <div className="flex space-x-6 text-white">
                                         <div className="flex space-x-2 items-center">
                                             <HeartIcon className="h-9" />
-                                            <p>500</p>
+                                            <p>{likes}</p>
                                         </div>
                                         <div className="flex space-x-2 items-center">
                                             <ChatIcon className="h-9" />
-                                            <p>43</p>
+                                            <p>{comments}</p>
                                         </div>
 
                                     </div>
