@@ -65,7 +65,7 @@ const UserProflie = () => {
                         </div>
                     </div>
                     <div className="overflow-scroll bg-[#FFF8F8]">
-                        <div className="grid grid-cols-3 h-[695px] rounded-md">
+                        <div className="grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 h-[695px] rounded-md">
                             <div className=" m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
                                 <img className="h-full w-full object-cover rounded-xl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Samantha_at_10_Enradhukulla_Teaser_Launch.jpg/1200px-Samantha_at_10_Enradhukulla_Teaser_Launch.jpg" alt="" />
                             </div>
@@ -90,6 +90,7 @@ const UserProflie = () => {
                             <div className="h-[375px]  m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
                                 <img className="h-full w-full object-cover rounded-xl" src="https://images.indianexpress.com/2021/11/samantha-4.jpg" alt="" />
                             </div>
+                            
 
 
 
