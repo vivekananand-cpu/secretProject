@@ -5,6 +5,7 @@ import Suggestions from './Suggestions';
 
 const Filters = () => {
     return (
+        
         <div className="container  w-[300px] h-[700px]  fixed  p-4 mt-2  rounded-lg">
             <div className="">
                 <div className="flex items-center ml-5 space-x-3 ">

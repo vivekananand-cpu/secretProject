@@ -21,9 +21,7 @@ function App() {
           <UserProflie />
    {/* <Navbar />
    <MainPage /> */}
-   {/* <button onClick={openModal} className="z-[1] bg-red-400 rounded-lg p-3 mt-8 hover:shadow-lg active:scale-105 transtion-all duration-500 ease-out">I am a modal</button>
-   <Modal className="" showModal={showModal} setShowModal={setShowModal}  />
-   <div className="bg-red-800 z-[2]">other content</div> */}
+   
 </>
   );
 }
