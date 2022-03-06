@@ -57,10 +57,10 @@ const UserProflie = () => {
 
                 <div className="hidden md:inline flex flex-col col-span-2">
                     <div className="flex items-center justify-center bg-[#f8f1f0] w-full h-[100px] rounded-md">
-                        <div className="flex justify-between w-[50%]">
-                            <p>20 Posts</p>
-                            <p>201 Following</p>
-                            <p>330 Followers</p>
+                        <div className="flex text-xl font-bold text-blue-900 justify-between w-[50%]">
+                            <p className=" hover:text-gray-600 cursor-pointer hover:shadow-slate-600 tranform transtion duration-300 ease-out">20 Posts</p>
+                            <p className=" hover:text-gray-600 cursor-pointer hover:shadow-slate-600 tranform transtion duration-300 ease-out">201 Following</p>
+                            <p className=" hover:text-gray-600 cursor-pointer hover:shadow-slate-600 tranform transtion duration-300 ease-out">330 Followers</p>
 
                         </div>
                     </div>
