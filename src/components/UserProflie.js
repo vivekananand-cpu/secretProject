@@ -1,5 +1,5 @@
 import React from 'react'
-import { LocationMarkerIcon, PhoneIcon, MailIcon } from "@heroicons/react/outline";
+import { LocationMarkerIcon, PhoneIcon, MailIcon, HeartIcon, ChatIcon } from "@heroicons/react/outline";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -66,31 +66,135 @@ const UserProflie = () => {
                     </div>
                     <div className="overflow-scroll bg-[#FFF8F8]">
                         <div className="grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 h-[695px] rounded-md">
-                            <div className=" m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
-                                <img className="h-full w-full object-cover rounded-xl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Samantha_at_10_Enradhukulla_Teaser_Launch.jpg/1200px-Samantha_at_10_Enradhukulla_Teaser_Launch.jpg" alt="" />
+                            <div className="relative m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
+                                <img className=" w-full object-cover rounded-xl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Samantha_at_10_Enradhukulla_Teaser_Launch.jpg/1200px-Samantha_at_10_Enradhukulla_Teaser_Launch.jpg" alt="" />
+                                <div className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl">
+                                    <div className="flex space-x-6 text-white">
+                                        <div className="flex space-x-2 items-center">
+                                            <HeartIcon className="h-9" />
+                                            <p>500</p>
+                                        </div>
+                                        <div className="flex space-x-2 items-center">
+                                            <ChatIcon className="h-9" />
+                                            <p>43</p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                             <div className=" m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
                                 <img className="h-full w-full object-cover rounded-xl" src="https://images.indianexpress.com/2021/10/samantha-1.jpeg" alt="" />
+                                <div className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl">
+                                    <div className="flex space-x-6 text-white">
+                                        <div className="flex space-x-2 items-center">
+                                            <HeartIcon className="h-9" />
+                                            <p>300</p>
+                                        </div>
+                                        <div className="flex space-x-2 items-center">
+                                            <ChatIcon className="h-9" />
+                                            <p>47</p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                             <div className=" m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
                                 <img className="h-full w-full object-cover rounded-xl" src="https://www.mrdustbin.com/wp-content/uploads/2020/05/Samantha-Akkineni-820x1024.jpg" alt="" />
+                                <div className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl">
+                                    <div className="flex space-x-6 text-white">
+                                        <div className="flex space-x-2 items-center">
+                                            <HeartIcon className="h-9" />
+                                            <p>700</p>
+                                        </div>
+                                        <div className="flex space-x-2 items-center">
+                                            <ChatIcon className="h-9" />
+                                            <p>9</p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                             <div className=" m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
                                 <img className="h-full w-full object-cover rounded-xl" src="https://images.bhaskarassets.com/web2images/521/2021/12/22/samantha_1640161062.jpg" alt="" />
+                                <div className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl">
+                                    <div className="flex space-x-6 text-white">
+                                        <div className="flex space-x-2 items-center">
+                                            <HeartIcon className="h-9" />
+                                            <p>434</p>
+                                        </div>
+                                        <div className="flex space-x-2 items-center">
+                                            <ChatIcon className="h-9" />
+                                            <p>34</p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                             <div className=" m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
                                 <img className="h-full w-full object-cover rounded-xl" src="https://1.bp.blogspot.com/-UwrVyn9PpUk/XyVvstBrM_I/AAAAAAAACwQ/d2BUgGUyIYgJENJ0Y509YLi2UBra2owUgCLcBGAsYHQ/s1600/images.jpeg" alt="" />
+                                <div className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl">
+                                    <div className="flex space-x-6 text-white">
+                                        <div className="flex space-x-2 items-center">
+                                            <HeartIcon className="h-9" />
+                                            <p>3434</p>
+                                        </div>
+                                        <div className="flex space-x-2 items-center">
+                                            <ChatIcon className="h-9" />
+                                            <p>433</p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                             <div className=" m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
                                 <img className="h-full w-full object-cover rounded-xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8Bxusl0nbbOwbXWTKK1ZL0iBRsUNA6mTxfsvDnt-HKRfBHynjNTuS3LhKEsvFgzHmYs&usqp=CAU" alt="" />
+                                <div className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl">
+                                    <div className="flex space-x-6 text-white">
+                                        <div className="flex space-x-2 items-center">
+                                            <HeartIcon className="h-9" />
+                                            <p>656</p>
+                                        </div>
+                                        <div className="flex space-x-2 items-center">
+                                            <ChatIcon className="h-9" />
+                                            <p>23</p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                             <div className="h-[375px]  m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
                                 <img className="h-full w-full object-cover rounded-xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjpYMKiBGDWUS6rkk8xC6Jo-2bUrSvScmjDlC-gzT815VevOVzuK4Zt9vXlJqWlcFqpPw&usqp=CAU" alt="" />
+                                <div className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/70 rounded-xl">
+                                    <div className="flex space-x-6 text-white">
+                                        <div className="flex space-x-2 items-center">
+                                            <HeartIcon className="h-9" />
+                                            <p>577</p>
+                                        </div>
+                                        <div className="flex space-x-2 items-center">
+                                            <ChatIcon className="h-9" />
+                                            <p>87</p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                             <div className="h-[375px]  m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
                                 <img className="h-full w-full object-cover rounded-xl" src="https://images.indianexpress.com/2021/11/samantha-4.jpg" alt="" />
+                                <div className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl">
+                                    <div className="flex space-x-6 text-white">
+                                        <div className="flex space-x-2 items-center">
+                                            <HeartIcon className="h-9" />
+                                            <p>767</p>
+                                        </div>
+                                        <div className="flex space-x-2 items-center">
+                                            <ChatIcon className="h-9" />
+                                            <p>45</p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
-                            
+
 
 
 
