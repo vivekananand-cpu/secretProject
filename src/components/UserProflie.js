@@ -7,9 +7,14 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import BarChart from './BarChart';
 import { useState } from 'react';
 import ImgModal from './ImgModal';
+import PostModal from './PostModal';
+import { PsychologyOutlined } from '@mui/icons-material';
 
 const UserProflie = ({name,profile,post,likes,comments,followers,work,phone,posts,following}) => {
     const [imgModal, setImgModal] = useState(false);
+    const [postModal, setPostModal] = useState(false);
+    console.log(postModal)
+
 
     return (
         <div className="h-[100vh] w-[100vw] flex justify-center items-center">
@@ -21,6 +26,8 @@ const UserProflie = ({name,profile,post,likes,comments,followers,work,phone,post
                         {/* user Avatar */}
                         <img onClick={() => { setImgModal(!imgModal) }} className="h-[250px] w-[250px] mt-3 pt-4 cursor-pointer shadow-md hover:shadow-xl rounded-full object-cover  hover:scale-110 transtion-all duration-500 ease-out" src={profile} alt="" />
                         <ImgModal photo={profile} imgModal={imgModal} setImgModal={setImgModal} />
+                        <PostModal postModal={postModal} setPostModal={setPostModal} post={post} />
+
                         <h1 className="text-3xl pb-5 hover:text-gray-500 hover:scale-95 transiton-all duration-500 ease-out">{name}</h1>
                     </div>
                     <div className="flex flex-col items-center justify-around">
@@ -66,10 +73,10 @@ const UserProflie = ({name,profile,post,likes,comments,followers,work,phone,post
                     </div>
                     <div className="overflow-scroll bg-[#FFF8F8]">
                         <div className="grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 h-[695px] rounded-md">
-                            <div className="relative m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
+                            <div  onClick={()=>setPostModal(!postModal)} className="relative m-2 hover:scale-105 hover:shadow-lg  cursor-pointer transform transition duration-300 ease-out">
                                 <img className=" w-full object-cover rounded-xl" src={post} alt="" />
-                                <div className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl">
-                                    <div className="flex space-x-6 text-white">
+                                <div  className="flex items-center justify-center opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl">
+                                    <div  className="flex space-x-6 text-white">
                                         <div className="flex space-x-2 items-center">
                                             <HeartIcon className="h-9" />
                                             <p>{likes}</p>
